@@ -24,9 +24,10 @@ Nel terminale dell'IDE dopo aver fatto il clone del progetto:
 - php artisan storage:link            -------------> serve a creare un link tra la cartella storage e la cartella public
 
 Nel Folder del Progetto:
-1) Creare due cartelle , una con il nome csv nel percorso storage/app/public        ------------> es: Storage/app/public/csv
-e l'altra con il nome new sempre in questo percorso      ----------> es:  storage/app/public/new
-in modo da avere una affianco all'altra le cartelle dei file creati dal file upload (csv) e la cartella dei nuovi file csv pronti per il download (new)
+1) Creare due cartelle 
+- una con il nome csv nel percorso storage/app/public ----------> es: storage/app/public/csv
+- l'altra con il nome new sempre in questo percorso    ------------> es: storage/app/public/new
+- in modo da avere una affianco all'altra le cartelle dei file creati dal file upload (csv) e la cartella dei nuovi file csv pronti per il download (new)
 
 2) Copiare il file .env.example, salvarlo come .env e editarlo per le configuazioni dell'app e del server locale. Nella voce 
 - DB_CONNECTION=mysql
