@@ -81,7 +81,7 @@ function upload_file(){
 
 
 function api_end_point(){
-    $("#submit").on("click", function (event){
+    $(".apiend").on("click", function (event){
         $.ajax({
             method: "POST",
             url: "/apiendpoint",
