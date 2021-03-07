@@ -165,7 +165,7 @@ footer {
 }
 
 .status-session p {
-  color: #A52A2A;
+  color: #a52a2a;
   font-size: 22px;
   letter-spacing: 1px;
 }
@@ -190,8 +190,13 @@ form .sect-form-int label {
   margin: 0 10px;
 }
 
-.upload_btn, .delete_btn, input[type=submit], button.result, button.download_btn_acc,
-.download_btn_rev, .download_btn_inc {
+.upload_btn,
+.delete_btn,
+input[type=submit],
+button.result,
+button.download_btn_acc,
+.download_btn_rev,
+.download_btn_inc {
   font-size: 15px;
   padding: 10px;
   margin: 0 10px;
@@ -209,16 +214,18 @@ form .sect-form-int label {
 }
 
 .delete_btn {
-  background-color: #A52A2A;
+  background-color: #a52a2a;
 }
 
 input[type=submit] {
   background-color: #778899;
 }
 
-button.result, button.download_btn_acc,
-.download_btn_rev, .download_btn_inc {
-  background-color: #1E90FF;
+button.result,
+button.download_btn_acc,
+.download_btn_rev,
+.download_btn_inc {
+  background-color: #1e90ff;
 }
 
 .upload_btn:hover {
@@ -227,7 +234,7 @@ button.result, button.download_btn_acc,
 }
 
 .delete_btn:hover {
-  background-color: #D2691E;
+  background-color: #d2691e;
   cursor: pointer;
 }
 
@@ -237,19 +244,27 @@ input[type=submit]:hover {
   cursor: pointer;
 }
 
-button.result:hover, button.download_btn_acc:hover,
-button.download_btn_rev:hover, button.download_btn_inc:hover {
-  background-color: #00BFFF;
+button.result:hover,
+button.download_btn_acc:hover,
+button.download_btn_rev:hover,
+button.download_btn_inc:hover {
+  background-color: #00bfff;
 }
 
-button.result, button.download_btn_acc,
-button.download_btn_rev, button.download_btn_inc, .apiEnd {
+button.result,
+button.download_btn_acc,
+button.download_btn_rev,
+button.download_btn_inc,
+.apiEnd {
   display: none;
   transition: display 0.3s ease-in;
 }
 
-button.result.active, button.download_btn_acc.active,
-button.download_btn_rev.active, button.download_btn_inc.active, .apiEnd.active {
+button.result.active,
+button.download_btn_acc.active,
+button.download_btn_rev.active,
+button.download_btn_inc.active,
+.apiEnd.active {
   display: inline;
 }
 
@@ -270,6 +285,12 @@ button.download_btn_rev.active, button.download_btn_inc.active, .apiEnd.active {
   margin: 0 30px;
 }
 
-.sect-result p, .apiEnd p {
+.sect-result p,
+.apiEnd p {
   font-size: 25px;
+}
+
+.apiEnd {
+  border: none;
+  background: none;
 }

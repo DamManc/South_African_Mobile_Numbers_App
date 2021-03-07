@@ -23,37 +23,37 @@ class PhoneController extends Controller
         $page = '';
         $paths = $request->segments();
         $this->v_data_page = null;
-        if(empty($paths) || $paths[0] === 'home'){
+        if (empty($paths) || $paths[0] === 'home') {
             $page .= 'home';
-        } else if($paths[0] === 'test') {
+        } else if ($paths[0] === 'test') {
             $page .= 'test';
-        } else if($paths[0] === 'result'){
+        } else if ($paths[0] === 'result') {
             $page .= 'result';
             $model = new Phone;
             $this->v_data_page = $model->importToDb();
             new Table($this->v_data_page);
-        } else if($paths[0] === 'downloadacc'){
+        } else if ($paths[0] === 'downloadacc') {
             $model = new Phone;
             $model->importToDb();
             $model->exportToNewFile();
             return $model->downloadAcc();
-        } else if($paths[0] === 'downloadrev'){
+        } else if ($paths[0] === 'downloadrev') {
             $model = new Phone;
             $model->importToDb();
             $model->exportToNewFile();
             return $model->downloadRev();
-        } else if($paths[0] === 'downloadinc'){
+        } else if ($paths[0] === 'downloadinc') {
             $model = new Phone;
             $model->importToDb();
             $model->exportToNewFile();
             return $model->downloadInc();
-        } else if($paths[0] === 'apiendpoint'){
+        } else if ($paths[0] === 'apiendpoint') {
             $model = new Phone;
             $model->importToDb();
             $model->exportToNewFile();
             return $model->apiEndPoint();
         }
-        return view('pages/'.$page, ['v_data_page' => $this->v_data_page]);
+        return view('pages/' . $page, ['v_data_page' => $this->v_data_page]);
     }
 
     /**
@@ -86,11 +86,10 @@ class PhoneController extends Controller
         $first_lines = 2;                               //------ 2 is changeable based on need
         $data = array_slice($file, $first_lines);
         $files = array_chunk($data, 200);               //------- 200 is changeable for large files
-        foreach ($files as $k => $file){
-            $fileName = storage_path('app/public/csv/'.$k.'.csv');
+        foreach ($files as $k => $file) {
+            $fileName = storage_path('app/public/csv/' . $k . '.csv');
             file_put_contents($fileName, $file);
         }
-
     }
 
     /**
