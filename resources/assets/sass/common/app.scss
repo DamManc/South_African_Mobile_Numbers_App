@@ -1,0 +1,95 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+body, html {
+    margin: 0;
+}
+
+a, a:active, a:focus, a:hover, a:visited, button, button:active, button:focus,
+button:hover, button:visited, input, input:active, input:focus, input:hover,
+input:visited, textarea, textarea:active, textarea:focus, textarea:hover,
+textarea:visited, select, select:active, select:focus, select:hover,
+select:visited {
+    outline: 0;
+    text-decoration: none;
+}
+
+img, embed, object, video {
+    max-width: 100%;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+.no-select, .no-select-all * {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -o-user-select: none;
+}
+
+.grecaptcha-badge {
+    visibility: hidden;
+}
+
+.lazy-loading {
+    opacity: 0;
+}
+
+.lazy-loaded.fade-in {
+    opacity: 1;
+    transition: opacity .4s ease-in-out;
+    -webkit-transition: opacity .4s ease-in-out;
+    -moz-transition: opacity .4s ease-in-out;
+    -o-transition: opacity .4s ease-in-out;
+}
+
+.title-unvis {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0;
+}
+
+/* ----------------------- CUSTOM ----------------------- */
+
+*, body, html {
+    font-family: sans-serif, Arial;
+    color: #303945;
+    scroll-behavior: smooth;
+}
+
+body, html {
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar, html::-webkit-scrollbar {
+    display: none;
+}
+
+*.body-block {
+    overflow: hidden;
+}
+
+body {
+    position: relative;
+}
+
+body li {
+    list-style-type: none;
+}

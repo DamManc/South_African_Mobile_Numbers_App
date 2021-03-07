@@ -1,0 +1,56 @@
+.sect-table{
+    padding: 100px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    height: auto;
+    width: 100%;
+}
+.sect-table-int{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    width: 33%;
+    overflow: scroll;
+}
+.sect-table-title{
+    height: 15%;
+}
+
+.sect-table-title h2 {
+    font-size: 25px;
+    font-family: "Arial Black";
+    letter-spacing: 1px;
+}
+.sect-table-cont{
+    height: 85%;
+    width: 100%;
+    padding: 10px 20px;
+}
+table{
+    width: 100%;
+    table-layout: fixed;
+}
+table td {
+    border: 2px solid #000000;
+    padding: 5px;
+}
+th.id {
+    width: 20%;
+}
+th.phone {
+    width: 35%;
+}
+th.error {
+    width: 45%;
+}
+th span {
+    font-size: 20px;
+    font-width: 900;
+    letter-spacing: 1px;
+}
+td span {
+    font-size: 17px;
+    letter-spacing: 1px;
+}

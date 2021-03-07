@@ -1,0 +1,33 @@
+header {
+    position: relative;
+    width: 100%;
+}
+.pre-navbar {
+    height: 100px;
+    background-color: #ffffff;
+    width: 100%;
+    text-align: center;
+}
+
+.pre-navbar h1 {
+    font-size: 45px;
+    letter-spacing: 2px;
+}
+.navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #B0C4DE;
+    height: 100px;
+}
+.navbar div {
+    position: relative;
+    margin: 0px 50px;
+}
+
+.navbar a {
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
