@@ -83,8 +83,14 @@ function upload_file() {
     });
 }
 
+<<<<<<< HEAD
 function api_end_point() {
     $(".apiEnd").on("click", function (event) {
+=======
+
+function api_end_point(){
+    $(".apiEnd").on("click", function (event){
+>>>>>>> 1a7a2636f7c42be7a9af80eeecc2e22627a2b0b3
         $.ajax({
             method: "POST",
             url: "/apiendpoint",
